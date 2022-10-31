@@ -8,4 +8,4 @@ Projeto final da disciplina de Linguagens de Script
  
  * Página inicial, com descrição da loja;
  * Página de cardápio;
- * Página de contato.
+ * Página para contato.
