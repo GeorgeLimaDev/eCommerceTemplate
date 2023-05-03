@@ -1,6 +1,6 @@
 import itens from './itens_cardapio.js';
 
-function getPrejectcard({valor,imagem,nome}){
+function getProjectcard({valor,imagem,nome}){
   return `<div class='item'>
         <h2>${nome}</h2>
         <h3>${valor}</h3>
@@ -13,11 +13,6 @@ function getPrejectcard({valor,imagem,nome}){
       </div>`
 }
 
-
-// https://get.foundation/building-blocks/blocks/plus-minus-input.html
-
-const projectContent = itens.map((f) => getPrejectcard(f)).join('')
+const projectContent = itens.map((f) => getProjectcard(f)).join('')
 const projectConteiner = document.querySelector('.cardapio')
 projectConteiner.innerHTML = projectContent
-
-
