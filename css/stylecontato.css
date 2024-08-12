@@ -1,27 +1,28 @@
 /* CSS DO ÍNDICE */
-*{
-  margin:0;
-  padding:0;
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-ul,nav{
+ul,
+nav {
   list-style: none;
 }
 
-a{
+a {
   text-decoration: none !important;
   color: inherit !important;
   cursor: pointer !important;
 }
 
-header{
+header {
   position: absolute;
   top: 0;
   left: 0;
   z-index: 10;
   width: 100%;
-  display: flex;  
+  display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 40px 60px 40px 60px;
@@ -29,68 +30,66 @@ header{
   /*font-size: 40px;*/
 }
 
-header h2{
+header h2 {
   text-transform: unppercase;
   font-size: 40px;
   display: flex;
   align-items: flex-end;
-  font-family: 'Grape Nuts', cursive;
+  font-family: "Grape Nuts", cursive;
 }
 
-header nav{
-  display: flex;  
+header nav {
+  display: flex;
 }
 
-header li{
+header li {
   margin: 0 14px;
 }
 
-header li:first-child{
+header li:first-child {
   margin-left: 10px;
 }
-header li:last-child{
+header li:last-child {
   margin-right: 10px;
 }
 
 nav li :hover {
-  color: #D3D3D3;
+  color: #d3d3d3;
 }
 
 nav li :active {
-  color: #E9967A;
+  color: #e9967a;
 }
 
-@media(max-width: 1000px){
-  header{
+@media (max-width: 1000px) {
+  header {
     padding: 20px 50px;
-  }  
+  }
 }
 
-@media (max-width: 700px){
-  header{
+@media (max-width: 700px) {
+  header {
     flex-direction: column;
   }
-  header h2{
+  header h2 {
     margin-bottom: 15px;
   }
-  header nav li{
+  header nav li {
     margin: 0 7px;
   }
 }
 
 /*CSS da estrutura */
 
-.estrutura{
+.estrutura {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding: 190px 0px 90px 0;
-  background: #D3D3D3;
+  background: #d3d3d3;
   background-image: url(Imagens/fundocafe.jpg);
 }
-
-
 
 /* Formulário */
 
@@ -107,14 +106,14 @@ form {
 
 .title-form {
   color: #eee;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   font-size: 26px;
   font-weight: 600;
   margin-top: 10px;
   text-align: center;
 }
 
-.form-control{
+.form-control {
   background-color: #eee;
   border-radius: 12px;
   border: 0;
@@ -160,27 +159,27 @@ form {
 
 /* Animação */
 
-  @keyframes muda-cor {
-    0%, 100% {
-      background-color: #E9967A;
-    }
-    25%, 75% {
-      background-color: #91533e;
-    }
-    50% {
-      background-color: #cd8888;
-    }
+@keyframes muda-cor {
+  0%,
+  100% {
+    background-color: #e9967a;
   }
-
-
+  25%,
+  75% {
+    background-color: #91533e;
+  }
+  50% {
+    background-color: #cd8888;
+  }
+}
 
 /*CSS do Footer */
 
 footer {
-    text-align: center;
-    background-color:white;
-    padding: 40px 60px 60px 40px;
-    margin: 0;
+  text-align: center;
+  background-color: white;
+  padding: 40px 60px 60px 40px;
+  margin: 0;
 }
 
 .copyright {
@@ -189,9 +188,7 @@ footer {
   padding: 10px;
 }
 
-footer p{
+footer p {
   font-size: 20px;
   padding: 10px;
-  
 }
-

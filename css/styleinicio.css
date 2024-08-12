@@ -1,14 +1,15 @@
-*{
-  margin:0;
-  padding:0;
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-ul,nav{
+ul,
+nav {
   list-style: none;
 }
 
-a{
+a {
   text-decoration: none !important;
   color: inherit !important;
   cursor: pointer !important;
@@ -16,56 +17,56 @@ a{
 
 /*HEADER*/
 
-header{
+header {
   position: absolute;
   top: 0;
   left: 0;
   z-index: 10;
   width: 100%;
-  display: flex;  
+  display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 40px 60px 40px 60px;
   background: #fff;
 }
 
-header h2{
+header h2 {
   text-transform: unppercase;
   font-size: 40px;
   display: flex;
   align-items: flex-end;
-  font-family: 'Grape Nuts', cursive;
+  font-family: "Grape Nuts", cursive;
 }
 
-header nav{
-  display: flex;  
+header nav {
+  display: flex;
 }
 
-header li{
+header li {
   margin: 0 14px;
 }
 
-header li:first-child{
+header li:first-child {
   margin-left: 10px;
 }
-header li:last-child{
+header li:last-child {
   margin-right: 10px;
 }
 
-@media(max-width: 1000px){
-  header{
+@media (max-width: 1000px) {
+  header {
     padding: 20px 50px;
-  }  
+  }
 }
 
-@media (max-width: 700px){
-  header{
+@media (max-width: 700px) {
+  header {
     flex-direction: column;
   }
-  header h2{
+  header h2 {
     margin-bottom: 15px;
   }
-  header nav li{
+  header nav li {
     margin: 0 7px;
   }
 }
@@ -75,12 +76,12 @@ nav li :hover {
 }
 
 nav li :active {
-  color: #E9967A;
+  color: #e9967a;
 }
 
 /*RESTO*/
 
-.inicio{
+.inicio {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -89,7 +90,7 @@ nav li :active {
   background: #f2f2f2;
 }
 
-.inicio li{
+.inicio li {
   padding: 10px;
   height: 650px;
   background-size: cover;
@@ -97,7 +98,7 @@ nav li :active {
   background-clip: content-box;
 }
 
-.inicio-esquerda{
+.inicio-esquerda {
   flex-basis: 50%;
   display: flex;
   flex-direction: column;
@@ -105,42 +106,42 @@ nav li :active {
   align-items: center;
 }
 
-.inicio-direita{
+.inicio-direita {
   flex-basis: 50%;
   background-image: url(https://viagemeturismo.abril.com.br/wp-content/uploads/2016/12/pb301.jpg);
 }
 
-.inicio h1{
+.inicio h1 {
   font-size: 70px;
   padding: 0 0 20px;
   font-weight: 100;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   line-height: 1.1;
 }
 
-.inicio h3{
-  font-family: 'Dancing Script', cursive;
+.inicio h3 {
+  font-family: "Dancing Script", cursive;
   font-size: 24px;
   font-weight: 100;
-  
 }
 
-@media (max-width: 1000px){
-  .inicio-direita, .inicio-esquerda{
+@media (max-width: 1000px) {
+  .inicio-direita,
+  .inicio-esquerda {
     flex-basis: 100%;
   }
-  .inicio li{
+  .inicio li {
     padding: 8px;
   }
 }
 
-@media (max-widht: 700px){
-  .inicio li{
+@media (max-widht: 700px) {
+  .inicio li {
     height: 400px;
   }
 }
 
-.sobre{
+.sobre {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -148,7 +149,7 @@ nav li :active {
   padding: 100px 70px 90px 60px;
 }
 
-.sobre li{
+.sobre li {
   padding: 0;
   height: 650px;
   background-size: cover;
@@ -156,7 +157,7 @@ nav li :active {
   background-clip: content-box;
 }
 
-.sobre-direita{
+.sobre-direita {
   flex-basis: 50%;
   display: flex;
   flex-direction: column;
@@ -165,15 +166,14 @@ nav li :active {
   background: #d1f0ff;
 }
 
-.sobre-direita h1{
+.sobre-direita h1 {
   padding: 0 0 25px;
   font-size: 50px;
   font-weight: 100px;
-  font-family: 'Open Sans', sans-serif;
-  
+  font-family: "Open Sans", sans-serif;
 }
 
-.sobre-direita h3{
+.sobre-direita h3 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -181,57 +181,56 @@ nav li :active {
   font-weight: 100;
   padding: 0px 180px;
   text-align: center;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
-.sobre-direita h3 p{
-text-align: center;
+.sobre-direita h3 p {
+  text-align: center;
 }
 
-.sobre-esquerda{
+.sobre-esquerda {
   flex-basis: 50%;
-  background-image: url(https://paraiba.pb.gov.br/noticias/volume-de-negocios-do-artesanato-paraibano-na-20a-fenearte-cresce-92/16_07_19-resultado-fenearte-pe-foto-jose-marques-2.jpg/@@images/86658e1a-504e-4bcb-93a5-939d1e390a21.jpeg)
+  background-image: url(https://paraiba.pb.gov.br/noticias/volume-de-negocios-do-artesanato-paraibano-na-20a-fenearte-cresce-92/16_07_19-resultado-fenearte-pe-foto-jose-marques-2.jpg/@@images/86658e1a-504e-4bcb-93a5-939d1e390a21.jpeg);
 }
 
-@media (max-width: 1500px){
-  .sobre-direita h3{
+@media (max-width: 1500px) {
+  .sobre-direita h3 {
     padding: 0 90px;
   }
 }
 
-
-@media (max-width: 1300px){
-  .sobre-direita h3{
+@media (max-width: 1300px) {
+  .sobre-direita h3 {
     padding: 0 70px;
   }
 }
-  
-@media (max-width: 1000px){
+
+@media (max-width: 1000px) {
   .sobre-esquerda,
-  .sobre-direita{
+  .sobre-direita {
     flex-basis: 100%;
   }
-  .sobre li{
+  .sobre li {
     padding: 8px;
     margin: 10px;
   }
-  .sobre-direita h3{
+  .sobre-direita h3 {
     padding: 0 80px;
   }
 }
 
-@media (max-width: 700px){
-  .sobre-direita h3{
+@media (max-width: 700px) {
+  .sobre-direita h3 {
     padding: 0 20px;
   }
-  .sobre li{
+  .sobre li {
     height: 400px;
   }
 }
 
 /*CHAT FIXO*/
 
-.fixo{
+.fixo {
   position: fixed;
   bottom: 30px;
   right: 0;
@@ -241,10 +240,10 @@ text-align: center;
 /*CSS do Footer */
 
 footer {
-    text-align: center;
-    background-color:white;
-    padding: 40px 60px 60px 40px;
-    margin: 0;
+  text-align: center;
+  background-color: white;
+  padding: 40px 60px 60px 40px;
+  margin: 0;
 }
 
 .copyright {
@@ -253,8 +252,7 @@ footer {
   padding: 10px;
 }
 
-footer p{
+footer p {
   font-size: 20px;
   padding: 10px;
-  
 }

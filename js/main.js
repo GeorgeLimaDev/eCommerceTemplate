@@ -1,6 +1,6 @@
-import itens from './itens_cardapio.js';
+import itens from "./itens_cardapio.js";
 
-function getProjectcard({valor,imagem,nome}){
+function getProjectcard({ valor, imagem, nome }) {
   return `<div class='item'>
         <h2>${nome}</h2>
         <h3>${valor}</h3>
@@ -10,9 +10,9 @@ function getProjectcard({valor,imagem,nome}){
         <img src=${imagem}>
         <button>Adicionar ao carrinho</button>
         <br>
-      </div>`
+      </div>`;
 }
 
-const projectContent = itens.map((f) => getProjectcard(f)).join('')
-const projectConteiner = document.querySelector('.cardapio')
-projectConteiner.innerHTML = projectContent
+const projectContent = itens.map((f) => getProjectcard(f)).join("");
+const projectConteiner = document.querySelector(".cardapio");
+projectConteiner.innerHTML = projectContent;
