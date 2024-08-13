@@ -4,23 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cadastro - PB ArtHub</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/256/1170/1170678.png">
     <script src="../js/usuarioController/mantemUsuario.js" type="module"></script>
 </head>
 
 <body>
     <form action="">
         <label for="email">Email: </label>
-        <input type="text" id="email" placeholder="Email">
+        <input type="text" id="email" placeholder="exemplo@mail.com" required>
         <br>
         <label for="nome">Nome: </label>
-        <input type="text" id="nome" placeholder="Nome">
+        <input type="text" id="nome" placeholder="Nome" required>
         <br>
         <label for="password">Senha: </label>
-        <input type="password" id="senha" placeholder="Senha">
+        <input type="password" id="senha" placeholder="Mínimo de 5 caracteres" required>
         <br>
         <label for="tipoConta">Tipo de conta: </label>
-        <select id="tipo">
+        <select id="tipo" required>
             <option value="cliente">Cliente</option>
             <option value="vendedor">Vendedor</option>
         </select>
