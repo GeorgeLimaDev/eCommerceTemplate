@@ -29,4 +29,4 @@ addUsuarioLogado();
 
 const projectContent = itens.map((f) => getProjectcard(f)).join("");
 const projectConteiner = document.querySelector(".cardapio");
-// projectConteiner.innerHTML = projectContent;
+projectConteiner.innerHTML = projectContent;
