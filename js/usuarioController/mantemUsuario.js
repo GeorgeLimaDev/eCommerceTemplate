@@ -18,8 +18,8 @@ function cadastrarUsuario(event) {
   }
 }
 
-function redirecionarParaLogin(email, senha) {
-  window.location.href = `./login.html?email=${email}&=${senha}`;
+function redirecionarParaLogin() {
+  window.location.href = `./login.html`;
 }
 
 function saveUser(user) {
