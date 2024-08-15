@@ -16,7 +16,7 @@ function validarLogin() {
     window.alert(`Usuário ${user.emailUser} logado com sucesso. Redirecionando para a página inicial...`);
 
     // Redirecionar para a página inicial
-    window.location.href = `../index.html?usuario=${user.emailUser}`;
+    window.location.href = `../index.html?usuario=${user.id}`;
   } else {
     window.alert("Erro em um dos campos. Digite os dados cadastrados corretamente.");
   }

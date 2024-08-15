@@ -1,5 +1,6 @@
 import itens from "./itens_cardapio.js";
 
+
 function getProjectcard({ valor, imagem, nome }) {
   return `<div class='item'>
         <h2>${nome}</h2>
@@ -14,19 +15,30 @@ function getProjectcard({ valor, imagem, nome }) {
       </div>`;
 }
 
-function addUsuarioLogado() {
-  let url = window.location.href;
-  if (url.includes("email")) {
-    url = url.split("=");
-    let email = url[1];
-    console.log(email);
-    let usuarioNaTela = document.getElementById("usuarioLogado");
-    usuarioNaTela.innerHTML += `<p>Boas vindas, ${email}</p>`;
-  }
+function addUsuarioLogado(loggedInUser) {
+  let usuarioNaTela = document.getElementById("usuarioLogado");
+  usuarioNaTela.innerHTML += `<p cursor=default> Bem vindo,${loggedInUser.nameUser}</p>`;
+
 }
 
-addUsuarioLogado();
+
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+
+const usuario = urlParams.get('usuario');
+
+const loggedInUser = JSON.parse(localStorage.getItem(usuario));
+
+
+if (loggedInUser) {
+  addUsuarioLogado(loggedInUser);
+}
+
 
 const projectContent = itens.map((f) => getProjectcard(f)).join("");
 const projectConteiner = document.querySelector(".cardapio");
-projectConteiner.innerHTML = projectContent;
+
+if (projectConteiner){
+  projectConteiner.innerHTML = projectContent;
+
+}
